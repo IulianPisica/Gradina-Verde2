@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Unelte - Grădina Verde</title>
+  <link rel="stylesheet" href="unelte.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Outfit:wght@700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+     <nav class="navbar">
+    <a href="/Home/home.css" class="nav-btn">
+      <img src="/Images/gradina verde.png" alt="Grădina Verde"/>
+    </a>
+      <a href="/About/about.html" class="nav-btn">Despre noi</a>
+      <div class="search">
+        <input type="text" id="search-input" placeholder="Caută în grădina verde"/>
+        <button class="search-icon">🔍</button>
+      </div>
+      <a href="/Contacts/contacts.html" class="nav-btn">Contacte</a>
+      <a href="/Cart/cart.html" class="nav-btn cart">🛒 Coșul</a>
+    </nav>
+  </header>
+  <main>
+    <div class="tools-header">
+      <label for="sort">Sortează După:</label>
+      <span id="product-count">Total: 0 Produse</span>
+    </div>
+    <div class="sort-container">
+      <select id="sort">
+        <option value="name-az">Nume A-Z</option>
+        <option value="name-za">Nume Z-A</option>
+        <option value="asc">Preț crescător</option>
+        <option value="desc">Preț descrescător</option>
+      </select>
+    </div>
+    <div class="products-container" id="products"></div>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="left-footer">
+        <p>🌿 Grădina Verde – Inspirație pentru fiecare colț de natură</p>
+        <p>📍 Str. Florilor nr. 12, Chișinău, Moldova</p>
+        <p>📞 +373 60120181</p>
+        <p>📧 contact@gradinaverde.md</p>
+        <p>🕒 Luni – Vineri: 09:00 – 18:00</p>
+        <p>🕒 Sâmbătă: 09:00 – 14:00</p>
+        <p>❌ Duminică: Închis</p>
+      </div>
+      <div class="center-footer">
+        <img src="/Images/logo.png" alt="Logo"/>
+      </div>
+      <div class="right-footer">
+        <p>Plăți și livrare:</p>
+        <p>💳 Acceptăm plăți cu cardul (Visa, Mastercard), ramburs sau transfer bancar.</p>
+        <p>🚚 Livrare rapidă în toată Moldova, gratuită la comenzi peste 1000 MDL.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="unelte.js"></script>
+  <script src="/Universal/searchbar.js"></script>
+</body>
+</html>

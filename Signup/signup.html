@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="signup.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <img src="/Images/logo.png" class="logo" alt="Logo"/>
+    <img src="/Images/Gradinaverde2.png" class="title-image" alt="Grădina Verde"/>
+    <h1 class="main-title">Sign up</h1>
+    <form class="form" action="/Home/home.html" method="POST">
+      <input type="text" id="username" name="username" required placeholder="Username, email & phone number"/>
+      <input type="password" id="password" name="password" required placeholder="Password"/>
+      <input type="password" id="confirm" name="confirm" required placeholder="Confirm Password"/>
+      <a href="/Login/index.html">Already have an account? Login</a>
+      <button type="submit">Sign Up</button>
+    </form>
+    <div class="divider">
+      <div class="line left"></div>
+      <div class="line right"></div>
+    </div>
+    <div class="social-icons">
+      <a class="icon" href="https://accounts.google.com/signin" target="_blank" rel="noopener">
+        <img src="/Company_Images/Google-logo.png" alt="Google"/>
+      </a>
+      <a class="icon" href="https://appleid.apple.com/auth/authorize" target="_blank" rel="noopener">
+        <img src="/Company_Images/apple-logo.png" alt="Apple"/>
+      </a>
+      <a class="icon" href="https://www.facebook.com/login.php" target="_blank" rel="noopener">
+        <img src="/Company_Images/Facebook.png" alt="Facebook"/>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

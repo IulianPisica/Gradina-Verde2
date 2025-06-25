@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Finalizare comandă - Grădina Verde</title>
+  <link rel="stylesheet" href="payment.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet"/>
+</head>
+<header>
+  <nav class="navbar">
+    <a href="/Home/home.css" class="nav-btn">
+      <img src="/Images/gradina verde.png" alt="Grădina Verde"/>
+    </a>
+    <a href="/About/about.html" class="nav-btn">Despre noi</a>
+    <div class="search">
+      <input type="text" placeholder="Caută în grădina verde"/>
+      <button class="search-icon">🔍</button>
+    </div>
+    <a href="/Contacts/contacts.html" class="nav-btn">Contacte</a>
+    <a href="/Cart/cart.html" class="nav-btn cart">🛒 Coșul</a>
+  </nav>
+</header>
+<body>
+  <div class="payment-container">
+    <form class="payment-form">
+      <div class="form-left">
+        <label>Nume Prenume:</label>
+        <input type="text"/>
+        <label>Adresă:</label>
+        <input type="text"/>
+        <label>Cod Postal:</label>
+        <input type="text"/>
+        <label>Raion:</label>
+        <input type="text"/>
+        <label>Oraș:</label>
+        <input type="text"/>
+        <label>Număr de telefon:</label>
+        <input type="text"/>
+      </div>
+      <div class="form-right">
+        <div class="card-icons">
+          <img src="/Card/Mastercard-Logo-.png" alt="Mastercard"/>
+          <img src="/Card/visa-logo-.png" alt="Visa"/>
+          <img src="/Card/American-Express-Logo-.png" alt="Amex"/>
+        </div>
+        <label>Nume Pe Card:</label>
+        <input type="text"/>
+        <label>Numărul Cardului:</label>
+        <input type="text"/>
+        <label>Data expirării:</label>
+        <div class="exp-row">
+          <input type="text" placeholder="Luna"/>
+          <input type="text" placeholder="Anul"/>
+          <input type="text" placeholder="CVV"/>
+        </div>
+        <label class="ssl-label">🔒 Tranzacție securizată prin SSL</label>
+        <button type="submit">Finalizează comanda</button>
+      </div>
+    </form>
+  </div>
+</body>
+<footer>
+  <div class="footer-content">
+    <div class="left-footer">
+      <p>🌿 Grădina Verde – Inspirație pentru fiecare colț de natură</p>
+      <p>📍 Str. Florilor nr. 12, Chișinău, Moldova</p>
+      <p>📞 +373 60120181</p>
+      <p>📧 contact@gradinaverde.md</p>
+      <p>🕒 Luni – Vineri: 09:00 – 18:00</p>
+      <p>🕒 Sâmbătă: 09:00 – 14:00</p>
+      <p>❌ Duminică: Închis</p>
+    </div>
+    <div class="center-footer">
+      <img src="/Images/logo.png" alt="Logo">
+    </div>
+    <div class="right-footer">
+      <p>Plăți și livrare:</p>
+      <p>💳 Acceptăm plăți cu cardul (Visa, Mastercard), ramburs sau transfer bancar.</p>
+      <p>🚚 Livrare rapidă în toată Moldova, gratuită la comenzi peste 1000 MDL.</p>
+    </div>
+  </div>
+  <div class="social">
+    <span>Urmărește-ne online:</span>
+    <a href="#">📘 Facebook</a>
+    <a href="#">📸 Instagram</a>
+    <a href="#">▶ YouTube</a>
+  </div>
+  <div class="copyright">
+    <p>© 2025 Grădina Verde. Toate drepturile rezervate.</p>
+    <p>🌱 Cultivăm împreună frumusețea naturii.</p>
+  </div>
+</footer>
+<script src="/Universal/searchbar.js"></script>
+</html>

@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: url("/Images/background.png") repeat;
+  background-size: cover;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  gap: 100px;
+  background: linear-gradient(to right, #2BFF00, #00B2FF);
+  padding: 10px 20px;
+  border-bottom: 2px solid black;
+}
+.search {
+  display: flex;
+  flex: 1;
+  border: 2px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 36px;
+  padding: 10px 20px;
+  background: white;
+}
+.search input {
+  padding: 14px;
+  font-size: 32px;
+  border: none;
+  width: 100%;
+}
+.search-icon {
+  background: white;
+  border: none;
+  font-size: 32px;
+  margin-top: -6px;
+}
+.nav-btn {
+  background-color: #b3f5f4;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 32px;
+  text-decoration: none;
+  color: black;
+}
+.tools-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  align-items: center;
+  font-weight: 600;
+  font-size: 25px;
+}
+.sort-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 60px;
+  gap: 20px;
+  font-size: 36px;
+  padding: 28px 0;
+}
+.sort-container select {
+  font-size: 20px;
+  padding: 10px 18px;
+}
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px 60px;
+}
+.product-card {
+  border: 2px solid #00c400;
+  background-color: #eaffea;
+  padding: 10px;
+  text-align: center;
+  border-radius: 12px;
+  position: relative;
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+.product-name {
+  font-weight: 700;
+  margin: 10px 0;
+  font-size: 24px;
+}
+.product-price {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.cart-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.cart-icon.active {
+  color: green;
+  transform: scale(1.2);
+}
+footer {
+  border-top: 2px solid black;
+  background: linear-gradient(to bottom, rgba(212, 255, 206, 0.9), rgba(255, 255, 255, 0.9));
+  padding: 20px 0;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 80px;
+}
+.left-footer,
+.right-footer {
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  flex: 1;
+}
+.center-footer img {
+  width: 300px;
+}
+.social {
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.social a {
+  margin: 0 15px;
+  text-decoration: underline;
+  color: black;
+}
+.copyright {
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  margin-top: 20px;
+}

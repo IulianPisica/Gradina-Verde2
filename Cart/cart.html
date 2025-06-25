@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coșul tău - Grădina Verde</title>
+  <link rel="stylesheet" href="/Cart/cart.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Outfit:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="cart-container">
+    <header>
+      <nav class="navbar">
+        <a href="/Home/home.html" class="nav-btn">
+          <img src="/Images/gradina verde.png" alt="Grădina Verde" />
+        </a>
+        <a href="/About/about.html" class="nav-btn">Despre noi</a>
+        <div class="search">
+          <input type="text" placeholder="Caută în grădina verde" />
+          <button class="search-icon">🔍</button>
+        </div>
+        <a href="/Contacts/contacts.html" class="nav-btn">Contacte</a>
+        <a href="/Cart/cart.html" class="nav-btn cart">🛒 Coșul</a>
+      </nav>
+    </header>
+    <main class="main-cart">
+      <section class="cart-summary">
+        <h3>Coș de Cumpărături</h3>
+        <div id="cart-items"></div>
+        <div class="cart-totals">
+          <p id="subtotal">Subtotal: 0 Lei</p>
+          <p id="delivery-cost">Livrare: 0 Lei</p>
+          <p id="grand-total">Total: 0 Lei</p>
+        </div>
+      </section>
+      <section class="cart-checkout">
+        <h3>Informații de contact</h3>
+        <form id="checkout-form">
+          <input type="text" placeholder="Prenume" required />
+          <input type="text" placeholder="Nume" required />
+          <input type="email" placeholder="Email" required />
+          <input type="tel" placeholder="Număr de telefon" required />
+          <label><input type="checkbox" required /> Sunt de acord cu Politica de confidențialitate</label>
+          <p class="delivery-info">
+            Livrarea este gratuită pentru comenzile peste 1000 lei. Sub această sumă, livrarea costă 100 lei.
+          </p>
+          <div class="buttons">
+            <button type="button" onclick="openMap()">Ridicare din magazin</button>
+            <button type="submit" id="continue-payment">Continuă spre achitare</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="left-footer">
+          <p>🌿 Grădina Verde – Inspirație pentru fiecare colț de natură</p>
+          <p>📍 Str. Florilor nr. 12, Chișinău, Moldova</p>
+          <p>📞 +373 60120181</p>
+          <p>📧 contact@gradinaverde.md</p>
+          <p>🕒 Luni – Vineri: 09:00 – 18:00</p>
+          <p>🕒 Sâmbătă: 09:00 – 14:00</p>
+          <p>❌ Duminică: Închis</p>
+        </div>
+        <div class="center-footer">
+          <img src="/Images/logo.png" alt="Logo">
+        </div>
+        <div class="right-footer">
+          <p>Plăți și livrare:</p>
+          <p>💳 Acceptăm plăți cu cardul (Visa, Mastercard), ramburs sau transfer bancar.</p>
+          <p>🚚 Livrare rapidă în toată Moldova, gratuită la comenzi peste 1000 MDL.</p>
+        </div>
+      </div>
+      <div class="social">
+        <span>Urmărește-ne online:</span>
+        <a href="https://facebook.com/" target="_blank">📘 Facebook</a>
+        <a href="https://instagram.com/" target="_blank">📸 Instagram</a>
+        <a href="https://youtube.com/" target="_blank">▶ YouTube</a>
+      </div>
+      <div class="copyright">
+        <p>© 2025 Grădina Verde. Toate drepturile rezervate.</p>
+        <p>🌱 Cultivăm împreună frumusețea naturii.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="/Universal/searchbar.js"></script>
+  <script src="/Cart/cart.js"></script>
+  <script src="/Pamant/pamant.js"></script>
+  <script src="/Seminte/seminte.js"></script>
+  <script src="/Unelte/unelte.js"></script>
+  <script>
+    function openMap() {
+      window.open("https://maps.app.goo.gl/idjsAmDCt2Aze3Pt5", "_blank");
+    }
+    document.getElementById('checkout-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      window.location.href = '/Payment/payment.html';
+    });
+  </script>
+</body>
+</html>
